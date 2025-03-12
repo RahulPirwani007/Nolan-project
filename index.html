@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="headerImg">
+                <img src="data/img/logo.svg" alt="">
+            </div>
+            <div class="headerListItem">
+                <i class='bx bx-menu' id="menu-icon" onclick="toggleSidebar()"></i>
+                <aside class="sidebar" id="sidebar">
+                    <ol>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ol>
+                </aside>
+                <ol class="orderList">
+                    <li class="listItem"><a href="#">Home</a></li>
+                    <li class="listItem"><a href="#">About</a></li>
+                    <li class="listItem"><a href="#">Services</a></li>
+                    <li class="listItem"><a href="#">Contact</a></li>
+                </ol>
+                <button class="log-in">Log in</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="page1">
+            <div class="left">
+                <div class="text">
+                    <h1>Bring your film project to life
+                    </h1>
+                    <h3>from <span>idea</span> to <span>production</span>
+                    </h3>
+                </div>
+                <button class="btn-blue">Click me</button>
+                <img src="data/svg/circle.svg" alt="">
+            </div>
+            <div class="right">
+                <div class="video">
+                    <video src="https://nolan-space.sfo3.cdn.digitaloceanspaces.com/assets/meet_bryce.mp4" controls
+                        muted loop autoplay></video>
+                </div>
+                <img src="data/svg/react.svg" alt="" class="rect">
+            </div>
+        </div>
+        <div class="page2">
+            <div class="p2-heading">
+                <h1>NolanAI is a collaborative film production suite</h1>
+                <h2>"covering the full film production process from concept creation and screenwriting to planning and
+                    stage production"</h2>
+            </div>
+            <div class="p2-main">
+                <div class="p2-left">
+                    <div class="bgreact">
+                        <video width="100%" height="100%" controls="" poster="data/img/poster.png" preload="none"
+                            playsinline="" data-cmp-info="10">
+                            <source
+                                src="https://nolan-space.sfo3.cdn.digitaloceanspaces.com/assets/barcelona-trailer.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="p2-right">
+                    <h1><span>AI</span> Video Generator</h1>
+                    <p>Transform your scripts into cinematic visuals with our AI
+                        <br>video generator.
+                    </p>
+                    <p>Sign up now to be among the first to access it!</p>
+                    <button class="blue">Get started</button>
+                </div>
+            </div>
+        </div>
+        <div class="page3">
+            <div class="cardContainer">
+                <div class="cardWrapper">
+                    <div class="svg-container">
+                        <svg width="90" height="90" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="Card_frame__jno_Z">
+                            <path
+                                d="M45 .5C20.423.5.5 20.423.5 45S20.423 89.5 45 89.5 89.5 69.577 89.5 45 69.577.5 45 .5z"
+                                stroke="#fff" stroke-opacity="0.08"></path>
+                            <path d="M45 11c-18.778 0-34 15.222-34 34s15.222 34 34 34 34-15.222 34-34-15.222-34-34-34z"
+                                stroke="#fff" stroke-opacity="0.08" stroke-width="4"></path>
+                        </svg>
+                        <i class='bx bx-edit-alt' id="icon"></i>
+                    </div>
+                    <div class="detail">
+                        <h3>AI Co-Pilot Editor</h3>
+                        <p>Overcome writer’s block with AI-driven prompts and suggestions, ensuring a seamless writing
+                            flow. </p>
+                    </div>
+                </div>
+                <div class="cardWrapper">
+                    <div class="svg-container">
+                        <svg width="90" height="90" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="Card_frame__jno_Z">
+                            <path
+                                d="M45 .5C20.423.5.5 20.423.5 45S20.423 89.5 45 89.5 89.5 69.577 89.5 45 69.577.5 45 .5z"
+                                stroke="#fff" stroke-opacity="0.08"></path>
+                            <path d="M45 11c-18.778 0-34 15.222-34 34s15.222 34 34 34 34-15.222 34-34-15.222-34-34-34z"
+                                stroke="#fff" stroke-opacity="0.08" stroke-width="4"></path>
+                        </svg>
+                        <i class='bx bx-movie' id="icon"></i>
+                    </div>
+                    <div class="detail">
+                        <h3>AI Pitch Deck</h3>
+                        <p>Create compelling pitch decks effortlessly with ready-made templates. NolanAI extracts
+                            crucial details to suggest casts and visualize your story. </p>
+                    </div>
+                </div>
+                <div class="cardWrapper">
+                    <div class="svg-container">
+                        <svg width="90" height="90" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="Card_frame__jno_Z">
+                            <path
+                                d="M45 .5C20.423.5.5 20.423.5 45S20.423 89.5 45 89.5 89.5 69.577 89.5 45 69.577.5 45 .5z"
+                                stroke="#fff" stroke-opacity="0.08"></path>
+                            <path d="M45 11c-18.778 0-34 15.222-34 34s15.222 34 34 34 34-15.222 34-34-15.222-34-34-34z"
+                                stroke="#fff" stroke-opacity="0.08" stroke-width="4"></path>
+                        </svg>
+                        <i class='bx bx-edit-alt' id="icon"></i>
+                    </div>
+                    <div class="detail">
+                        <h3>Multilingual</h3>
+                        <p>Work seamlessly in Spanish, French, Portuguese, or Russian - no language barriers to hold
+                            back your projects. </p>
+                    </div>
+                </div>
+                <div class="cardWrapper">
+                    <div class="svg-container">
+                        <svg width="90" height="90" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="Card_frame__jno_Z">
+                            <path
+                                d="M45 .5C20.423.5.5 20.423.5 45S20.423 89.5 45 89.5 89.5 69.577 89.5 45 69.577.5 45 .5z"
+                                stroke="#fff" stroke-opacity="0.08"></path>
+                            <path d="M45 11c-18.778 0-34 15.222-34 34s15.222 34 34 34 34-15.222 34-34-15.222-34-34-34z"
+                                stroke="#fff" stroke-opacity="0.08" stroke-width="4"></path>
+                        </svg>
+                        <i class='bx bx-edit-alt' id="icon"></i>
+                    </div>
+                    <div class="detail">
+                        <h3>Analytics</h3>
+                        <p>Instantly identify plot holes and receive thorough script coverage analysis. Perfect your
+                            screenplay with targeted insights and scores. </p>
+                    </div>
+                </div>
+                <div class="cardWrapper">
+                    <div class="svg-container">
+                        <svg width="90" height="90" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="Card_frame__jno_Z">
+                            <path
+                                d="M45 .5C20.423.5.5 20.423.5 45S20.423 89.5 45 89.5 89.5 69.577 89.5 45 69.577.5 45 .5z"
+                                stroke="#fff" stroke-opacity="0.08"></path>
+                            <path d="M45 11c-18.778 0-34 15.222-34 34s15.222 34 34 34 34-15.222 34-34-15.222-34-34-34z"
+                                stroke="#fff" stroke-opacity="0.08" stroke-width="4"></path>
+                        </svg>
+                        <i class='bx bx-edit-alt' id="icon"></i>
+                    </div>
+                    <div class="detail">
+                        <h3>Automated Breakdown</h3>
+                        <p>Streamline pre-production with automatic breakdowns that quickly organize script elements for
+                            efficient planning. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
